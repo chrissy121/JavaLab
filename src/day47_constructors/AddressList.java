@@ -23,7 +23,7 @@ public class AddressList {
         newAddress.setZipCode("22102");
         System.out.println(newAddress.toString());
 
-//        Address papaJon = new Address("8501 Tyco Rd Ste 1A", "Vienna", "VA", "22182");
+        Address papaJon = new Address();
         //BREAK TILL 9:11 PM EST
 
 
