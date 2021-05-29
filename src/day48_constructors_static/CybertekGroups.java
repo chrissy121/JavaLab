@@ -31,8 +31,12 @@ public class CybertekGroups {
             System.out.println("Mindy is member of group2");
         } else {
             System.out.println("Mindy is NOT member of group2");
-
         }
 
+
+        //remove
+        group1.removeMember("Pavel");
+        group1.removeMember("Elvin");
+        System.out.println(group1);
     }
 }
