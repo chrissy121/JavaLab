@@ -64,19 +64,36 @@ public class ScrumTeam {
     public void addDeveloper(Developer ... developers) { //Tester [] testers
         this.allDevelopers.addAll(Arrays.asList(developers));
     }
-    public static void main(String[] args) {
 
-        ScrumTeam scrumTeam = new ScrumTeam("Ziba", "John", "Chrissy");
-        System.out.println(scrumTeam.allTesters);
-        Tester tester1 = new Tester("Maxim", 10, "SDET", 1000000);
-        scrumTeam.addTester(tester1);
-        scrumTeam.addTester( new Tester("Anna", 11, "SDET", 1000000));
-        System.out.println(scrumTeam.allTesters);
+    public boolean removeTester(int employeeID) {
+        for (int i = 0; i < allTesters.size(); i++) {
+            if (allTesters.get(i).getEmployeeID() == employeeID) {
+                allTesters.remove(i);
+                return true;
+            }
+        }
 
-        scrumTeam.addDeveloper(new Developer("Anton", 1, "Dev", 1000000));
-        System.out.println(scrumTeam.allDevelopers);
-
+        return false;
     }
+
+
+//     public boolean removeDeveloper (int )
+
+
+//    public static void main(String[] args) {
+//
+//        ScrumTeam scrumTeam = new ScrumTeam("Ziba", "John", "Chrissy");
+//        System.out.println(scrumTeam.allTesters);
+//        Tester tester1 = new Tester("Maxim", 10, "SDET", 1000000);
+//        scrumTeam.addTester(tester1);
+//        scrumTeam.addTester( new Tester("Anna", 11, "SDET", 1000000));
+//        System.out.println(scrumTeam.allTesters);
+//
+//        scrumTeam.addDeveloper(new Developer("Anton", 1, "Dev", 1000000));
+//        System.out.println(scrumTeam.allDevelopers);
+//
+//    }
+
 
 
 }
