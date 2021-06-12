@@ -7,7 +7,7 @@ public class Admin extends User {
         System.out.println("Admin class constructor");
     }
 
-    public Admin(String name, String role, int id) {
+    public Admin(String name, int id) {
         super("Admin", name, id);
         System.out.println("Admin class 2 args constructor");
     }
@@ -16,7 +16,7 @@ public class Admin extends User {
     public String toString() {
         return  "User{" +
                 "name='" + getName() + '\'' +
-                ", role=" + getRole() +
+                ", role=" + getRole() + '\''+
                 ", id=" + getId() +
                 '}';
     }
