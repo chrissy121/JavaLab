@@ -1,37 +1,27 @@
 package OfficeHours.Constructor;
+/*
+Create a class Item
 
+    -> Instance variables:
+        - name (String), price (double), quantity (int)
+
+    -> Constructor:
+        - Accepts and initializes all three variables
+
+    -> Instance methods:
+        - toString(): returns information about Item
+ */
 public class Item {
-    private String  name;
-    private double price;
-    private int quantity;
+    String  name;
+    double price;
+    int quantity;
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
+    public Item(String name, double price, int quantity) {
         this.name = name;
-    }
-
-    public double getPrice() {
-        return price;
-    }
-
-    public void setPrice(double price) {
         this.price = price;
-    }
-
-    public int getQuantity() {
-        return quantity;
-    }
-
-    public void setQuantity(int quantity) {
         this.quantity = quantity;
     }
 
-    public Item(String name, double price, int quantity) {
-
-    }
 
     @Override
     public String toString() {

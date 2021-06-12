@@ -77,10 +77,26 @@ public class ScrumTeam {
     }
 
 
-//     public boolean removeDeveloper (int )
+     public boolean removeDeveloper (int employeedID) {
+        int size = allDevelopers.size();
+        allDevelopers.removeIf(eachDev -> eachDev.getEmployeeID() == employeedID);
+        return size != allDevelopers.size();
+     }
 
+    @Override
+    public String toString() {
+        return "ScrumTeam{" +
+                "productOwner='" + productOwner + '\'' +
+                ", businessAnalyst='" + businessAnalyst + '\'' +
+                ", scrumMaster='" + scrumMaster + '\'' +
+                ", sprintNumber=" + sprintNumber +
+                ", allTesters=" + allTesters +
+                ", allDevelopers=" + allDevelopers +
+                ", sprintNumber=" + sprintNumber +
+                '}';
+    }
 
-//    public static void main(String[] args) {
+    //    public static void main(String[] args) {
 //
 //        ScrumTeam scrumTeam = new ScrumTeam("Ziba", "John", "Chrissy");
 //        System.out.println(scrumTeam.allTesters);
