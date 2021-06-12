@@ -7,7 +7,7 @@ public class Discord extends MobileApp {
     }
     /*
         override download method
-     */
+    */
       @Override
       public boolean download() {
       System.out.println("Downloaded Discord 0.0.23 from App Store");
@@ -18,6 +18,11 @@ public class Discord extends MobileApp {
     public void useTheApp(int minutes) {
         super.useTheApp(minutes);
         chat("Vladislav");
+    }
+
+    public void printInfo() {
+        System.out.println("App Name = " + getName());
+        System.out.println("App Version = " + getVersion());
     }
 
 
