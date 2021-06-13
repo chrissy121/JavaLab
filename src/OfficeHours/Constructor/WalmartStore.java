@@ -63,7 +63,7 @@ public class WalmartStore {
     @Override
     public String toString() {
         return "WalmartStore{" +
-                "location='" + location + '\'' +
+                "location='" + location + '\''+
                 ", totalWorth=" + totalWorth +
                 ", inventory=" + inventory +
                 '}';
