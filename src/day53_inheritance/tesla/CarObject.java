@@ -33,5 +33,13 @@ public class CarObject {
         roadster.drive(600);
 
         System.out.println(roadster.getCount());
+
+        Modelx modelx = new Modelx("Tesla", "Model X", 89990.0, 2022, 360);
+        System.out.println(modelx.toString());
+        modelx.drive(10);
+        System.out.println("Having lunch...");
+        modelx.drive(20);
+        System.out.println("Range remaining = " + modelx.getRange());
+        System.out.println(modelx.getCount());
     }
 }

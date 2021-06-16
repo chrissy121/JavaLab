@@ -8,6 +8,7 @@ public class ElectricCar {
     private int range;
     private static int count; //all object will share this variable
 
+
     public ElectricCar(String make, String model, double price, int year, int range) {
         setMake(make); //reuse
         this.model = model;
