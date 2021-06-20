@@ -1,6 +1,10 @@
 package day55_abstraction.interfaces_demo;
 
 public class ChromeDriver implements WebDriver {
+
+    public ChromeDriver() {
+        System.out.println("Launching Chrome Driver");
+    }
     @Override
     public void get(String url) {
         System.out.println("ChromeDriver - navigating to " + url);
