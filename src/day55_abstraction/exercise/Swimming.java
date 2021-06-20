@@ -1,13 +1,14 @@
 package day55_abstraction.exercise;
 
-public class Running extends Exercise {
+public class Swimming extends Exercise{
+
     @Override
     public void perform() {
-        System.out.println("Performing Running exercise");
+        System.out.println("Performing Swimming in a pool or ocean");
     }
 
     @Override
     public int getCaloriesCount(int minutes) {
-        return minutes *13;
+        return minutes * 11;
     }
 }
