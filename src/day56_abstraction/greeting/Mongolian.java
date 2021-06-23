@@ -1,4 +1,4 @@
-package day56_abstraction;
+package day56_abstraction.greeting;
 
 public class Mongolian implements Greeting{
     @Override
